@@ -1,0 +1,32 @@
+// color
+
+$primary-color: #e5f0f1;
+// $primary-color: #0685b6;
+$dark-primary-color: #70B2B9;
+$d1-primary-color: #70B2B9;
+$d2-primary-color: #6E8FC6;
+
+$secondary-color: #ffdd09;
+
+// $bg-color: #f1eedb;
+$bg-color: white;
+
+$font-color: black;
+$opposite-font-color: white;
+
+$heading-color: black;
+
+$link-color: $font-color;
+$link-active-color: $dark-primary-color;
+
+$gray-color: #f1eedb;
+$blue-color: #0a419a;
+
+// font
+@mixin primary-font(){
+	font-family: 'bree-light';
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}

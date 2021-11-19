@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'bree-light';
+    src: url('../fonts/Bree-Light.ttf');
+}
+
+body{
+	background-color: $bg-color;
+	@include primary-font();
+	color: $font-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: $heading-color;
+}
+
+a{
+	color: $link-color;
+	&:hover{
+		text-decoration: none;
+		color: $link-active-color;
+	}
+	&:visited{
+		text-decoration: none;
+		// color: $link-color;
+	}
+	&:active, &:focus{
+		text-decoration: none;
+		color: $link-color;
+	}
+}
+
+.dark-link{
+	color: $link-color;
+	&:hover{
+		text-decoration: none;
+		font-weight: bolder;
+		color: $link-color;
+	}
+}
+
+.yoga-img{
+	
+	@media (min-width: 576px) { 
+		height: 380px;
+		max-height: 380px;
+	}
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+main{
+	background: linear-gradient(to left, $primary-color, $dark-primary-color);
+}
+
+.btn{
+	font-family: sans-serif;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.video-wrapper{
+	video, iframe{
+		@media (min-width: 576px) {
+			margin-bottom: -8px;
+		}
+	}
+}
+
+.fett{
+	font-weight: 700;
+}

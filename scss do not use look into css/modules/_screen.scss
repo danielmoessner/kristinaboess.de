@@ -1,0 +1,27 @@
+.screen{
+	background-color: $opposite-font-color;
+	z-index: 100;
+	height: calc(80vh - 156px);
+	background: url("../img/home.jpg");
+	background-size: cover;
+	@media (max-width: 991px) { 
+		height: calc(60vh - 156px);
+		background-position: 70% 70%;
+	}
+	&--small{
+		height: 30vh;
+	}
+	&--medium{
+		height: 70vh;
+	}
+	&--1{
+		background: url("../img/stones.jpg");
+		background-size: cover;
+		background-position: 50% 75%;
+	}
+	&--2{
+		background: url("../img/meadow.jpg");
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+}

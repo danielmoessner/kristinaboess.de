@@ -1,0 +1,9 @@
+.card-columns{
+	@media (min-width: 576px) and (max-width: 991px) {
+		column-count: 2;
+		.card{
+			margin-top: .25rem;
+			margin-bottom: .75rem;
+		}
+	}
+}

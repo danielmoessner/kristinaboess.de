@@ -1,0 +1,72 @@
+.turnover{
+	height: 100%;
+	perspective: 1000px;
+	&--card{
+		transition: 0.9s;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		position: relative;
+		height: 100%;
+	}
+	&:hover &--card{
+		transform: rotateY(180deg);
+	}
+	&--front, &--back{
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&--front {
+		z-index: 2;
+	}
+	&--back {
+		transform: rotateY(180deg);
+	}
+
+	&--special1{
+		background-color: rgba(0,0,0,0); 
+		border: 0;
+	}
+	&--special2{
+		border: 0;
+	}
+	&--special3{
+		height: 380px;
+	}
+} 
+
+// autoprefix
+.turnover {
+	height: 100%;
+	-webkit-perspective: 1000px;
+	perspective: 1000px; }
+	.turnover--card {
+		-webkit-transition: 0.9s;
+		-o-transition: 0.9s;
+		transition: 0.9s;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		position: relative;
+		height: 100%; }
+		.turnover:hover .turnover--card {
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg); }
+			.turnover--front, .turnover--back {
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0; }
+				.turnover--front {
+					z-index: 2; }
+					.turnover--back {
+						-webkit-transform: rotateY(180deg);
+						transform: rotateY(180deg); }
+						.turnover--special1 {
+							background-color: rgba(0, 0, 0, 0);
+							border: 0; }
+							.turnover--special2 {
+								border: 0; }
+								.turnover--special3 {
+									height: 380px; }

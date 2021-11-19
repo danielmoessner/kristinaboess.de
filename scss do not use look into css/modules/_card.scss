@@ -1,0 +1,41 @@
+.card{
+	margin-top: .75rem;
+	margin-bottom: 0;
+	&-img{
+		min-width: 100%;
+	}
+	&-primary-color{
+		background-color: $primary-color;
+	}
+	&-dark-primary-color{
+		background-color: $dark-primary-color;
+	}
+	&-placeholder{
+		border: 0;
+		visibility: hidden;
+	}
+	&-header{
+		&-primary{
+			background-color: $primary-color;
+		}
+		&-dark-primary{
+			background-color: $dark-primary-color;
+			// background: linear-gradient(to top, $primary-color, $dark-primary-color, $dark-primary-color);
+		}
+
+	}
+	&-coaching{
+		margin-top: 30px;
+	}
+}
+.image-card{
+	border-bottom: 0;
+	.card-header:first-child{
+		border-radius: calc(.25rem - 1px); 
+	}
+}
+.turnover--front{
+	.card-header{
+		background-color: #d7ecee;
+	}
+}

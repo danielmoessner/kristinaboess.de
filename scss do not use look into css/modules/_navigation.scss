@@ -1,0 +1,34 @@
+.navbar, .nav{
+	background-color: $primary-color;
+	&-toggler{
+		top: 4px;
+	}
+	.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: $link-color;
+				padding: .5em 1em;
+				&:hover{
+					text-decoration: none;
+					color: $link-active-color;
+				}
+				&:visited{
+					text-decoration: none;
+					// color: $link-color;
+				}
+				&:active, &:focus, {
+					text-decoration: none;
+					color: $link-color;
+				}
+			}
+			.active{
+				color: $link-active-color!important;
+			}
+		}
+	}
+	.nav-item{
+		.btn{
+			margin: .5em 1em;
+		}
+	}
+}
